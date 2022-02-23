@@ -8,9 +8,9 @@ namespace Core.Utilities.Security.Encryption
     public class SigningCredentialsHelper 
     {
         //Asp.net'in hangi anahtarı ve hangi algoritmayı kullanacağını söylememiz
-        public static SigningCredentials CreateSigningCredentials(SecurityKey sequrityKey)
+        public static SigningCredentials CreateSigningCredentials(SecurityKey securityKey) 
         {
-            return new SigningCredentials(sequrityKey, SecurityAlgorithms.HmacSha256Signature);
+            return new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256Signature);
         }
     }
 }
